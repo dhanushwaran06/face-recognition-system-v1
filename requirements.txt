@@ -1,0 +1,6 @@
+Flask
+pymongo
+face_recognition
+numpy
+Pillow
+gunicorn
