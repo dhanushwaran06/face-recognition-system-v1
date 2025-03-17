@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Student Recognition System</h2>
+
+        <!-- Add Student Form -->
+        <h3>Add Student</h3>
+        <form id="addStudentForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="studentId" placeholder="Student ID" required>
+            <input type="text" id="class" placeholder="Class" required>
+            <input type="file" id="studentImage" required>
+            <button type="submit">Add Student</button>
+        </form>
+        
+        <hr>
+
+        <form id="searchStudentForm">
+            <input type="file" id="searchImage" required>
+            <button type="submit">Search Student</button>
+        </form>
+        
+        <div id="result"></div> <!-- For displaying student info -->
+        
+</body>
+</html>
